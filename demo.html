@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Cycle Demo</title>
+	</head>
+	
+	<body>
+		<div id="cycle_area">
+			<div>
+				Cycle HTML content <img src="path/to/img.jpg" />
+				<ul>
+					<li>A list</li>
+					<li>Whatever you need</li>
+				</ul>
+				<p>Just keep them in separate DIVs</p>
+			</div><!-- /one thing to cycle, loop this -->
+			
+			<div>
+				Even more HTML content
+				<ul>
+					<li>A list</li>
+					<li>Whatever you need</li>
+				</ul>
+				<a href="#">A link!</a>
+				<p>Just keep them in separate DIVs</p>
+			</div><!-- /one thing to cycle, loop this -->
+		</div><!-- /cycle_area-->
+		
+		<div id="nav_buttons">
+			<a href="#" id="prev">&#171; Prev</a>&nbsp;
+			<a href="#" id="next">Next &#187;</a>
+		</div>
+	
+	<script src="http://www.google.com/jsapi"></script>
+	<script>
+	  google.load('jquery','1.4.2');
+	</script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
+	
+	<script>
+	  $(document).ready(function(){
+	    $('#cycle_area').cycle({
+				//pass some options
+				fx: 'scrollHorz',
+				speed: 'fast',
+				prev: '#prev',
+				next: '#next',
+				easing: 'easeInOutCubic'				
+			});			
+				
+	  });
+	</script>
+</body>
+	</html>
