@@ -1,10 +1,13 @@
 $(document).ready(function(){
   $('#cycle_area').cycle({
 		fx: 'scrollHorz',
-		speed: 'fast',
+		speed: 1000,
+		timeout: 5500,
 		prev: '#prev',
 		next: '#next',
-		easing: 'easeInOutCubic'				
+		pager: '#pager',
+		easing: 'easeInOutCubic',
+		pause: true			
 	});			
 		
 });
