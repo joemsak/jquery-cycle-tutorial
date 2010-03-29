@@ -1,61 +1,76 @@
 body{
 	padding:10px;
 	font:normal 62.5% "Lucida Grande", Arial, sans-serif;
-	background:#fff;
-	color:#fff;
+	background:#333;
 }
 
 #cycle_area{
 	font-size:1.3em;
 	border:5px solid #666;
 	width:550px;
-	border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	-khtml-border-radius:10px;
-	background:rgba(0,0,0,0.8);
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-khtml-border-radius:7px;
+	background:rgba(255,255,255,0.8);
 }
 
 #cycle_area div{
 	padding:10px;
 }
 
-#nav_buttons{
-	padding:10px;
+#nav_buttons, #pager{
+	padding:5px 0;
 	font-size:1.2em;
 	overflow:hidden;
 }
 
 a:link, a:visited{
-	color:#71e6b8;
+	color:#00b1f3;
 	text-decoration:none;
 }
-#nav_buttons a{
+#nav_buttons a, #pager a{
 	display:block;
 	float:left;
 	padding:5px 10px;
-	margin:0 10px 10px 0;
+	margin:0 10px 0 0;
 	background:#999;
 	color:#333;
-	border:1px solid #fff;
+	border:1px solid #333;
+}
+
+#pager a{
+	background:0;
+	padding:0;
+	border-width:3px;
+}
+#pager a img{
+	display:block;
 }
 
 a:hover{
 	text-decoration:underline;
 }
 
-#nav_buttons a:hover, #nav_buttons a.activeSlide{
+#nav_buttons a:hover{
 	background:#ddd;
-	border-color:#333;
+	border-color:#999;
 	color:#000;
 	text-decoration:none;
 }
+#pager a.activeSlide{
+	border-color:#00b1f3;
+}
 
-img{
+#cycle_area img{
 	float:left;
 	margin:0 10px 0 0;
 	border:2px solid #00b1f3;
 }
 h2, h3{
 	margin:0 0 10px;
+}
+
+p{
+	line-height:20px;
 }

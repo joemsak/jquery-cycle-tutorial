@@ -6,8 +6,16 @@ $(document).ready(function(){
 		prev: '#prev',
 		next: '#next',
 		pager: '#pager',
+		pagerAnchorBuilder: buildThumbnails,
 		easing: 'easeInOutCubic',
 		pause: true			
 	});			
 		
 });
+
+function buildThumbnails(i, elem){
+	src = $(elem).find('img').attr('src');
+	title = $(elem).find('h2').text();
+	html = '<a href="#" title="' + title + '"><img src="' + src + '" width="50" height="50" alt="'+ title +'" /></a>';
+	return html
+}
