@@ -1,48 +1,48 @@
 body{
 	padding:10px;
 	font:normal 62.5% "Lucida Grande", Arial, sans-serif;
-	background:#333;
+	background:#fff;
 }
 
 #cycle_area{
-	font-size:1.3em;
-	border:5px solid #666;
+	font-size:1.2em;
+	background:rgba(0,0,0,0.1);
 	width:550px;
-	border-radius:7px;
-	-webkit-border-radius:7px;
-	-moz-border-radius:7px;
-	-khtml-border-radius:7px;
-	background:rgba(255,255,255,0.8);
+	height:350px;
 }
 
 #cycle_area div{
+	margin:10px;
 	padding:10px;
+	border:1px solid #ddd;
+	background:#fff;
 }
 
-#nav_buttons, #pager{
-	padding:5px 0;
+#pager{
+	padding:10px;
 	font-size:1.2em;
 	overflow:hidden;
+	width:530px;
+	background:rgba(0,0,0,0.1);
 }
 
-a:link, a:visited{
+
+#cycle_area a:link, a:visited{
 	color:#00b1f3;
 	text-decoration:none;
 }
-#nav_buttons a, #pager a{
+#pager a{
 	display:block;
 	float:left;
-	padding:5px 10px;
 	margin:0 10px 0 0;
 	background:#999;
-	color:#333;
-	border:1px solid #333;
+	border:3px solid #999;
 }
-
-#pager a{
-	background:0;
-	padding:0;
-	border-width:3px;
+#pager a:hover{
+	border-color:#b4e2f3;
+}
+#pager a.activeSlide{
+	border-color:#00b1f3;
 }
 #pager a img{
 	display:block;
@@ -50,16 +50,6 @@ a:link, a:visited{
 
 a:hover{
 	text-decoration:underline;
-}
-
-#nav_buttons a:hover{
-	background:#ddd;
-	border-color:#999;
-	color:#000;
-	text-decoration:none;
-}
-#pager a.activeSlide{
-	border-color:#00b1f3;
 }
 
 #cycle_area img{
